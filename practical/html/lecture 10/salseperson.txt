@@ -1,0 +1,3 @@
+CREATE DATABASE salseperson;
+CREATE TABLE salseperson sno int 6 ,sname char 20,city char 20,comm float(3),PRIMARY KEY;
+INSERT into salseperson (pk)sno,sname,city,comm VALUES ('1001','peel','london','.12'),('1002','serres','san jose','.13'),('1004','motika','london','.11'),('1007','rafkin','barcelona','.15'),('1003','axeirod','new york','.1')

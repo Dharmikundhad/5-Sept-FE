@@ -1,0 +1,22 @@
+creat database customer;
+
+creat table customer  (pk)cnm int(20), cname char(20), city char(20), rating int(20), (fk)sno (20);
+
+INSERT INTO `customer`(`(pk)cnm`, `cname`, `city`, `rating`, `(fk)sno`) VALUES ('201','hoffman','london','100','1001'),('202','giovanne','roe','200','1003'),('203','liu','san jose','300','1002'),('204','gress','barcelona','100','1005'),('206','clemens','london','300','1007'),('207','pereira','roe','100','1004');
+
+CREATE INDEX salse_name ON `salseperson` (sname);
+
+SELECT * FROM `salseperson` WHERE city='london';
+
+SELECT*FROM `salseperson` ORDER BY `salseperson`.`(pk)sno` ASC;
+
+SELECT*FROM `salseperson` ORDER BY `salseperson`.`comm` ASC;
+
+SELECT*FROM `salseperson` ORDER BY `salseperson`.`city` DESC;
+
+SELECT DISTINCT `(pk)sno`, `sname`, `city`, `comm` FROM `salseperson`;
+
+SELECT * FROM `salseperson` WHERE comm;
+
+SELECT * FROM `salseperson` WHERE city=city;
+
