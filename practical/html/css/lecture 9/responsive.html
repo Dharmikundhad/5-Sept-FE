@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive</title>
+    <style>
+        .main{
+            display: flex;
+        }
+        .col1{
+            height: 250px;
+            width: 150px;
+            border: 1px solid black;
+        }
+        .col2{
+            height: 250px;
+            width: 150px;
+            border: 1px solid black;
+        }
+        .col3{
+            height: 250px;
+            width: 150px;
+            border: 1px solid black;
+        }
+        @media(max-width:480px){
+            .main{
+                flex-direction: column;
+            }
+            .col1{
+                width: 100%;
+            }
+            .col2{
+                width: 100%;
+            }
+            .col3{
+                width: 100%;
+            }
+
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="main">
+        <div class="col1">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, repellat eaque? Numquam neque officia expedita, rerum cupiditate modi commodi nobis rem dignissimos inventore odit quasi consequuntur quidem eius, id iste.
+        </div>
+        <div class="col2">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, distinctio dolore illum ratione ut ipsam praesentium facere temporibus soluta. Odit natus fuga dolor eveniet reiciendis esse reprehenderit ipsum ratione porro.
+        </div>
+        <div class="col3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore amet mollitia assumenda delectus velit similique corporis tempora placeat temporibus debitis cupiditate doloribus architecto odio aliquam dolorum nobis hic, omnis incidunt.
+        </div>
+
+    </div>
+</body>
+</html>
