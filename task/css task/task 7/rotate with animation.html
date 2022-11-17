@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>roatate with animation</title>
+    <style>
+        .a{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            border-radius: 50%;
+            margin-left: 43%;
+            margin-top: 5%;
+            background-image: conic-gradient(pink,green,skyblue,teal,yellow,coral,orange,goldenrod);
+            animation-name: rotate;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        @keyframes rotate{
+            0%{
+                transform: rotate(0deg);
+            }
+            10%{
+                transform: rotate(36deg);
+            }
+            20%{
+                transform: rotate(72deg);
+            }
+            30%{
+                transform: rotate(108deg);
+            }
+            40%{
+                transform: rotate(144deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            60%{
+                transform: rotate(216deg);
+            }
+            70%{
+                transform: rotate(252deg);
+            }
+            80%{
+                transform: rotate(288deg);
+            }
+            90%{
+                transform: rotate(324deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+        .b{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+            border-radius: 50%;
+            margin-left: 43%;
+            margin-top: 10%;
+            background-image: conic-gradient(pink,green,skyblue,teal,yellow,coral,orange,goldenrod);
+            animation-name: rotate2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        @keyframes rotate2{
+            0%{
+                transform: rotate(0deg);
+            }
+            10%{
+                transform: rotate(36deg);
+            }
+            20%{
+                transform: rotate(72deg);
+            }
+            30%{
+                transform: rotate(108deg);
+            }
+            40%{
+                transform: rotate(144deg);
+            }
+            50%{
+                transform: rotate(180deg);
+            }
+            60%{
+                transform: rotate(216deg);
+            }
+            70%{
+                transform: rotate(252deg);
+            }
+            80%{
+                transform: rotate(288deg);
+            }
+            90%{
+                transform: rotate(324deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="a">
+
+    </div>
+    <div class="b">
+
+    </div>
+</body>
+</html>

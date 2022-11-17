@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before effect</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            margin-top: 15%;
+            margin-left: 40%;
+        }
+        h1{
+            position: relative;
+            padding-top: 20px;
+        }
+        p{
+            position: relative;
+            font-size: 20px;
+            padding-top: 10px;
+        }
+        hr{
+            position: relative;
+        }
+        div::after{
+            content: "";
+            height: 200px;
+            width: 0px;
+            background-image: url(gujarat.jpg);
+            background-size: 100% 100%;
+            position: absolute;
+            left: 40.20%;
+            display: block;
+            transition: 3s;
+            top: 29%;
+        }
+        div:hover::after{
+            width: 200px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>GUJARAT</h1>
+        <hr style="width: 40px;" color="black">
+        <p>Heart Of India</p>
+
+    </div>
+</body>
+</html>
