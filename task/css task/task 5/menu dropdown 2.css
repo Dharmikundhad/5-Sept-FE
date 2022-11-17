@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url('chai shop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    width: 100%;
+    height: 100px;
+}
+.logo{
+    width: 30%;
+    height: 100px;
+    float: left;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.logo h1{
+    width: 100%;
+    height: 100px;
+    margin: 28px;
+    font-size: 40px;
+    color: chocolate;
+    padding-left: 40px;
+}
+nav{
+    width: 70%;
+    height: 100px;
+    float: right;
+    background-color: chocolate;
+}
+nav ul{
+    font-size: 20px;
+    float: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 30px;
+    text-align: center;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.li1 .col1 ul li{
+    font-size: 20px;
+    padding: 10px;
+    display: none;
+    text-align: center;
+}
+.li2 .col2 ul li{
+    font-size: 20px;
+    padding: 10px;
+    display: none;
+    text-align: center;
+}
+.li1 .col1 ul li a{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.li1 .col1 ul li a:hover{
+    color:yellow
+}
+.li2 .col2 ul li a{
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+.li2 .col2 ul li a:hover{
+    color:yellow
+}
+nav ul .li1:hover .col1 ul li{
+    background-color: rgba(22, 22, 22,0.6);
+    display: block;
+    border-radius: 10px;
+    margin: 10px;
+}
+nav ul .li2:hover .col2 ul li{
+    background-color: rgba(22, 22, 22, 0.6);
+    display: block;
+    border-radius: 10px;
+    margin: 10px;
+}
