@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            border: 1px solid black;
+            position: absolute;
+            animation: test;
+            animation-duration: 5s;
+            animation-direction: normal;
+            animation-iteration-count: infinite;
+        }
+        @keyframes test {
+            0%{
+                top: 2px;
+                left: 2px;
+                background-color: aquamarine;
+            }
+            25%{
+                top: 2px;
+                left: 500px;
+                background-color: violet;
+            }
+            50%{
+                top: 500px;
+                left: 500px;
+                background-color: thistle;
+            }
+            75%{
+                top: 500px;
+                left: 2px;
+                background-color: springgreen;
+            }
+            100%{
+                top: 2px;
+                left: 2px;
+                background-color: silver;
+            }
+            
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
