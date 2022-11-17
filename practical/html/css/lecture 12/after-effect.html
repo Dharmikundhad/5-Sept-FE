@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>after effect</title>
+    <style>
+        h1{
+            position: relative;
+        }
+        h1::after{
+            content: "";
+            height: 5px;
+            width: 10px;
+            top: 35px;
+            left: 0px;
+            position: absolute;
+            background-color: rgb(240, 90, 63);
+            transition: 2s;
+        }
+        h1:hover::after{
+            width: 16%;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>welcome to web</h1>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider with animation</title>
+    <style>
+        div{
+            height: 600px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            animation-name: slider;
+            animation-duration: 10s;  
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        @keyframes slider{
+            0%{
+                background-image: url(bg.jpg);
+            }
+            20%{
+                background-image: url(bg2.jpg);
+            }
+            40%{
+                background-image: url(bg3.jpg);
+            }
+            60%{
+                background-image: url(bg4.jpg);
+            }
+            80%{
+                background-image: url(bg5.jpg);
+            }
+            100%{
+                background-image: url(bg6.jpg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+</body>
+</html>
