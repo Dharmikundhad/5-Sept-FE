@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop down</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            user-select: none;
+            cursor: pointer;
+        }
+        ul li{
+            list-style: none;
+            float: left;
+            height: 50px;
+            width: 100px;
+            text-align: center;
+            line-height: 50px;
+            /* border: 1px solid black;
+             */
+            font-size: 15px;
+            background-color: cadetblue;
+            color: white;
+            margin: 1px;
+        }
+        ul li ul{
+            display: none;
+        }
+        ul li ul li{
+            display: block;
+        }
+        ul li:hover{
+            background-color: darkcyan;
+            color: black;
+        }
+        ul li:hover ul{
+            display: block;
+        }
+        .html{
+            position: absolute;
+            left: 15%;
+            top: 7.9%;
+            width: 100px;
+        }
+        .html li{
+            display: none;
+            background-color: rgb(36, 116, 197);
+        }
+        ul li ul li:hover .html li{
+            display: block;
+        }
+        .css{
+            position: absolute;
+            left: 15%;
+            top: 15.9%;
+            width: 100px;
+        }
+        .css li{
+            display: none;
+            background-color: rgb(36, 116, 197);
+        }
+        ul li ul li:hover .css li{
+            display: block;
+        }
+        .javascript{
+            position: absolute;
+            left: 15%;
+            top: 23.7%;
+            width: 100px;
+        }
+        .javascript li{
+            display: none;
+            background-color: rgb(36, 116, 197);
+        }
+        ul li ul li:hover .javascript li{
+            display: block;
+        }
+        .bootstrap{
+            position: absolute;
+            left: 15%;
+            top: 39.6%;
+            width: 100px;
+        }
+        .bootstrap li{
+            display: none;
+            background-color: rgb(36, 116, 197);
+        }
+        ul li ul li:hover .bootstrap li{
+            display: block;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Home</li>
+        <li>Courses
+            <ul>
+                <li>HTML
+                    <ul class="html">
+                        <li>Html</li>
+                        <li>Html 5</li>
+                    </ul>
+                </li>
+                <li>CSS
+                    <ul class="css">
+                        <li>Css</li>
+                        <li>Css3</li>
+                    </ul>
+                </li>
+                <li>JAVA-SCRIPT
+                    <ul class="javascript">
+                        <li>ES1</li>
+                        <li>ES2</li>
+                        <li>ES3</li>
+                        <li>ES4</li>
+                        <li>ES5</li>
+                        <li>ES6</li>
+                    </ul>
+                </li>
+                <li>J-QUERY</li>
+                <li>BOOT-STRAP
+                    <ul class="bootstrap">
+                        <li>B1</li>
+                        <li>B2</li>
+                        <li>B3</li>
+                        <li>B4</li>
+                        <li>B5</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li>Fees</li>
+        <li>Contact Us</li>
+    </ul>
+</body>
+</html>
