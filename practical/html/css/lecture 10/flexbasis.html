@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex basis</title>
+    <style>
+        .main{
+            display: flex;
+            
+        }
+        .col1{
+            border: 1px solid black;
+            flex-basis: 23%;
+            height: 200px;
+        }
+        .col2{
+            border: 1px solid black;
+            flex-basis: 23%;
+            height: 200px;
+        }
+        .col3{
+            border: 1px solid black;
+            flex-basis: 23%;
+            height: 200px;
+        }
+        @media(max-width:480px){
+        .main{
+            flex-direction: column;
+        }
+    }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="col1">
+        this is div 1
+    </div>
+    <div class="col2">
+        this is div 2
+    </div>
+    <div class="col3">
+        this is div 3 
+    </div>
+</div>
+</body>
+</html>
