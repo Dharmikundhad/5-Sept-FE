@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 100px;
+            /* border: 1px solid black; */
+        }
+        button{
+            width: 100%;
+        }
+        div:hover ul{
+            display: block;
+            /* border: 1px solid black; */
+            color: brown;
+        }
+        ul{
+            display: none;
+        }
+        ul li{
+            list-style: none;
+        }
+        .col1{
+            height: 200px;
+            width: 200px;
+            background-color:aqua;
+            text-align: center;
+        }
+        .col1 a{
+            text-decoration: none;
+            font-size: 30px;
+        }
+        .col1 a::after{
+            content: "";
+            width: 0%;
+            height: 2px;
+            background-color: red;
+            display: block;
+            margin: auto;
+            transition: 1s;
+        }
+        .col1 a:hover::after{
+            width: 100%;
+        }
+        .col2{
+            height: 200px;
+            width: 200px;
+            background-color: lightseagreen;
+            text-align: center;
+            margin-top: 2%;
+        }
+        .col2 a{
+            text-decoration: none;
+            font-size: 30px;
+            padding-top: 50px;
+        }
+        .col2 a::before{
+            content: "";
+            width: 0%;
+            height: 2px;
+            background-color: red;
+            display: block;
+            margin: auto;
+            transition: 1s;
+        }
+        .col2 a:hover::before{
+            width: 100%;
+        }
+    
+    </style>
+</head>
+<body>
+    <div>
+        <button>web designing</button>
+        <ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>Java script</li>
+            <li>J query</li>
+            <li>Boot strap</li>
+        </ul>
+    </div>
+    <div class="col1">
+        <a href="">Dharmik</a>
+    </div>
+    <div class="col2">
+        <a href="">Dharmik</a>
+    </div>
+</body>
+</html>
